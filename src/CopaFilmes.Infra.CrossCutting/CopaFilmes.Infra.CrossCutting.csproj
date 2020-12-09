@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CopaFilmes.Application\CopaFilmes.Application.csproj" />
+    <ProjectReference Include="..\CopaFilmes.Domain\CopaFilmes.Domain.csproj" />
+    <ProjectReference Include="..\CopaFilmes.Infra.Api\CopaFilmes.Infra.Api.csproj" />
+    <ProjectReference Include="..\CopaFilmes.Infra.Cache\CopaFilmes.Infra.Cache.csproj" />
+  </ItemGroup>
+
+</Project>
