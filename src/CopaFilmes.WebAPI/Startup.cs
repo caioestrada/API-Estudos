@@ -2,6 +2,7 @@ using AutoMapper;
 using CopaFilmes.Application.AutoMapper;
 using CopaFilmes.Infra.CrossCutting;
 using CopaFilmes.WebAPI.Configurations;
+using CopaFilmes.WebAPI.Configurations.Swagger;
 using Microsoft.AspNet.OData.Extensions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;

@@ -12,7 +12,7 @@ namespace CopaFilmes.WebAPI.Controllers.v1
 {
 
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/v1/[controller]")]
     public class FilmesController : ControllerBase
     {
         private readonly IFilmesAppService _filmeAppService;
@@ -26,6 +26,9 @@ namespace CopaFilmes.WebAPI.Controllers.v1
 
         [HttpGet]
         [EnableQuery]
+        [ProducesResponseType((int)HttpStatusCode.NotFound)]
+        [ProducesResponseType(typeof(List<FilmeViewModel>), (int)HttpStatusCode.OK)]
+        [ProducesResponseType(typeof(string), (int)HttpStatusCode.InternalServerError)]
         public async Task<ActionResult<List<FilmeViewModel>>> ObterTodos()
         {
             try
@@ -43,6 +46,9 @@ namespace CopaFilmes.WebAPI.Controllers.v1
         }
 
         [HttpPost("Competidores")]
+        [ProducesResponseType((int)HttpStatusCode.BadRequest)]
+        [ProducesResponseType(typeof(PartidaViewModel), (int)HttpStatusCode.OK)]
+        [ProducesResponseType(typeof(string), (int)HttpStatusCode.InternalServerError)]
         public ActionResult<PartidaViewModel> RelizarCampeonato(List<FilmeViewModel> competidores)
         {
             try
