@@ -1,5 +1,5 @@
 # API-Estudos
-![fluxo de trabalho de exemplo](https://github.com/caioestrada/API-Estudos/actions/workflows/dotnet.yml/badge.svg)
+[![Android-master Actions Status](https://github.com/caioestrada/API-Estudos/actions/workflows/dotnet.yml/badge.svg)](https://github.com/caioestrada/API-Estudos/actions)
 
 Api em .Net 5 para estudos.
 
